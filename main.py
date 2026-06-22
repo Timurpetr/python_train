@@ -2050,7 +2050,50 @@ import sys
 # print(unique_nums)
 #
 
+#
+# class Point:
+#     def __init__(self, x, y):
+#         self.x = x
 
-class Point:
-    def __init__(self, x, y):
-        self.x = x
+
+# f_log = open('log.dat', encoding='utf-8')
+# header = f_log.read(3)
+# last_data = f_log.readline()
+# f_log.close()
+# try:
+#     with open('diagnostics.csv', encoding = 'utf-8') as file:
+#         success_open_file = True
+#         header = file.readline()
+#         row = file.readline()
+# except FileNotFoundError:
+#     success_open_file = False
+
+
+# success_open_file = True
+# success_file_operations = True
+# last_row = None
+#
+# try:
+#     with open('images/targets.dat', encoding='UTF-8') as filed:
+#         last_row = filed.readlines()[-1]
+# except FileNotFoundError:
+#     success_open_file = False
+# except Exception:
+#     success_file_operations = False
+
+try:
+    with open('python/course_text.txt', encoding = 'windows-1251') as file_w:
+        target = 'python'
+
+        while True:
+            current_pos = file_w.tell()
+            chunk = file_w.read(len(target))
+            if not chunk:
+                break
+            if chunk.lower() == target:
+                file_w.seek(current_pos)
+                break
+            file_w.seek(current_pos + 1)
+
+except FileNotFoundError:
+    pass
