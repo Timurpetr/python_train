@@ -31,7 +31,6 @@ from itertools import count
 # print(matrix)
 
 
-
 # A = [[1,2,3],[4,5,6],[7,8,9]]
 #
 # A = [ [ x**2 for x in row] for row in A ]
@@ -141,10 +140,6 @@ from itertools import count
 # print(s)
 
 
-
-
-
-
 # D = input().split()
 #
 # d = [[i.split('=')[0], i.split('=')[1]] for i in D]
@@ -244,8 +239,6 @@ from itertools import count
 #             print(round(sqrt_n, 2))
 
 
-
-
 # lst_in = [
 #     "ustanovka-i-zapusk-yazyka",
 #     "ustanovka-i-poryadok-raboty-pycharm",
@@ -266,13 +259,10 @@ from itertools import count
 #         print(f"Взято из кэша: {cached_page}")
 
 
-
-
 # lst = ['+6','+7','+5','+4']
 #
 # a = dict.fromkeys(lst, 'Код страны')
 # print(a)
-
 
 
 # char =  {".-": "а", "-...": "б", ".--": "в", "--.": "г", "-..": "д", ".": "е", "...-": "ж", "--..": "з", "..": "и", ".---": "й", "-.-": "к", ".-..": "л", "--": "м", "-.": "н", "---": "о", ".--.": "п", ".-.": "р", "...": "с", "-": "т", "..-": "у", "..-.": "ф", "....": "х", "-.-.": "ц", "---.": "ч", "----": "ш", "--.-": "щ", ".--.-": "ъ", "-.--": "ы", "-..-": "ь", "...-...": "э", "..--": "ю", ".-.-": "я", "-...-": " "}
@@ -284,8 +274,6 @@ from itertools import count
 #     if word in char:
 #         codes.append(char[word])
 # print(*codes, sep='')
-
-
 
 
 # s = list(map(int, input().split()))
@@ -315,7 +303,6 @@ from itertools import count
 #         wha.append(i)
 #         wt -= things_sorted[i]
 # print(*wha)
-
 
 
 # a = int(input())
@@ -367,8 +354,6 @@ from itertools import count
 # print(f"{a} мин - это {a//60} час {a%60} минут.")
 
 
-
-
 # a = int(input())
 # print(f'Сумма цифр = {a//100+ (a // 10) % 10 + a%10}\nПроизведение цифр = {(a//100) * ((a // 10) % 10) * (a%10)}')
 
@@ -382,7 +367,6 @@ from itertools import count
 # print(f'Цифра в позиции тысяч равна {a//1000}\nЦифра в позиции сотен равна {(a//100)%10}\nЦифра в позиции десятков равна {(a//10)%10}\nЦифра в позиции единиц равна {a%10}')
 
 
-
 # print("Told you not to worry", "But maybe that's a lie", sep=' :) ')
 #
 #
@@ -390,13 +374,6 @@ from itertools import count
 # print("The world's a little blurry", "Or maybe it's my eyes", end='!!!', sep=' :) ')
 #
 # print("Honey, what's your hurry", end='?')
-
-
-
-
-
-
-
 
 
 #
@@ -428,7 +405,6 @@ from itertools import count
 # print(f"Квадрат суммы {a} и {b} равен {(a + b)**2}\nСумма квадратов {a} и {b} равна {a**2 + b**2}")
 
 
-
 # a = int(input())
 # b = int(input())
 # c = int(input())
@@ -444,8 +420,6 @@ from itertools import count
 
 # t = tuple(input())
 # print(t)
-
-
 
 
 # a = {'это': 'тоже кортеж'}
@@ -471,7 +445,6 @@ from itertools import count
 #     print(*city)
 
 
-
 # students = list(map(str.lower, input().split()))
 # result = list()
 #
@@ -480,7 +453,6 @@ from itertools import count
 #         result.append(name)
 # result = tuple(result)
 # print(*result)
-
 
 
 # lst = list(map(int, input().split()))
@@ -528,7 +500,6 @@ import sys
 # print(len(set(input().lower().split())))
 
 
-
 # st = set()
 # for i in input():
 #     if i.isdigit():
@@ -546,7 +517,6 @@ import sys
 # b = set(lst_in)
 #
 # print(len(b))
-
 
 
 # lst_in = ["EvgeniyK: спасибо большое!", "LinaTroshka: лайк и подписка!", "Sergey Karandeev: крутое видео!", "Евгений Соснин: обожаю", "EvgeniyK: это повтор?", "Sergey Karandeev: нет, это новое видео"]
@@ -567,7 +537,6 @@ import sys
 # print(len(cities))
 
 
-
 # language = 'Русский'
 #
 # if language != 'English' != 'Español':
@@ -582,7 +551,6 @@ import sys
 # res = setA & setB
 # res2 = setA | setB
 # print(res, res2, sep='\n')
-
 
 
 # setA = set(map(int, input().split()))
@@ -600,7 +568,6 @@ import sys
 #     print('YES')
 # else:
 #     print('NO')
-
 
 
 # num = input()
@@ -644,7 +611,6 @@ import sys
 #     print("НЕТ")
 
 
-
 # grade = set(map(int, input().split()))
 #
 # if  2 in grade:
@@ -678,7 +644,6 @@ import sys
 #     print('НЕТ')
 
 
-
 # m = {'неудовл.': 2, 'удовл.': 3, 'хорошо': '4', 'отлично': '5' }
 # n = {int(y): x.upper() for x, y in m.items()}
 #
@@ -697,7 +662,6 @@ import sys
 #
 # a = {x for x in lst}
 # print(len(a))
-
 
 
 # lst = input().split()
@@ -730,14 +694,10 @@ import sys
 # print(d)
 
 
-
 # d = {}
 # val = d.setdefault('a', 0)   # val = 0, d = {'a': 0}
 # val = d.setdefault('b', 100) # val = 0 (потому что ключ уже есть)
 # print(d)
-
-
-
 
 
 # lst = [
@@ -751,14 +711,11 @@ import sys
 # print(lst)
 
 
-
 # lst_in = [[4,3,2,-1],[-1,-1,-2,-3]]
 #
 # res = [m for n in lst_in for m in n if m < 0]
 #
 # print(*res)
-
-
 
 
 # t = (4, 3, -1, 10, 9, 3)
@@ -768,7 +725,6 @@ import sys
 # print(*lst)
 
 
-
 # s = 0
 # while (d := int(input())) != 0:
 #     if d % 2 == 0:
@@ -776,13 +732,11 @@ import sys
 # print(s)
 
 
-
 # s = 1
 # while (d := int(input())) > 0:
 #     if d % 3 == 0:
 #         s *= d
 # print(s)
-
 
 
 # def send_print():
@@ -806,7 +760,6 @@ import sys
 #
 #
 # perimeter(*map(int, input().split()))
-
 
 
 # def check_email(email):
@@ -901,7 +854,6 @@ import sys
 # print(*lst)
 
 
-
 # tp = input().strip()
 #
 # #здесь продолжайте программу
@@ -915,7 +867,6 @@ import sys
 #
 #
 # print(get_sq(10))
-
 
 
 # def bool_check(city):
@@ -948,7 +899,6 @@ import sys
 #     return a * b
 #
 # print(min_an_max(max(digs), min(digs)))
-
 
 
 # import time
@@ -1036,7 +986,6 @@ import sys
 # test_nod(get_nod)
 
 
-
 # def gcd(a, b):
 #     while b:
 #         a, b = b, a % b
@@ -1044,7 +993,6 @@ import sys
 #
 # a, b = map(int, input().split())
 # print(gcd(a, b))
-
 
 
 # def get_rect_value(l, w, tp = 0):
@@ -1083,7 +1031,6 @@ import sys
 # res = input().lower()
 # print(translit(res))
 # print(translit(res,sep='+'))
-
 
 
 # def tagify(string, tag = "h1",up = True):
@@ -1185,7 +1132,6 @@ import sys
 # c = input().split()
 #
 # print(*s, *c)
-
 
 
 # menu = {'Главная': 'home', 'Архив': 'archive', 'Новости': 'news'}
@@ -1321,7 +1267,6 @@ import sys
 # print(str_min4("я", "выполнил", "значимый", "подвиг"))
 
 
-
 # def most_popular(people, *,case_sens=False):
 #     prepared_people = [i if case_sens else i.lower() for i in people]
 #     counts = {}
@@ -1335,13 +1280,11 @@ import sys
 # result = most_popular(writers, case_sens=True)
 
 
-
 # def is_even(n):
 #     if n % 2 == 0:
 #         return True
 #     else:
 #         return False
-
 
 
 # i = [5, 10, 3, 8]
@@ -1429,8 +1372,6 @@ import sys
 # songs = merge_dicts(d1, d2, d3, ignored_keys=('id',))
 
 
-
-
 # def symbol_upper(msg, indx=0, *, ignore_indx, to_upper=True):
 #     if indx in ignore_indx:
 #         return msg
@@ -1447,7 +1388,6 @@ import sys
 #
 # print(res1)
 # print(res2)
-
 
 
 # def model(x, w, /, bias=0.0, scale=1.0):
@@ -1566,7 +1506,6 @@ import sys
 # print(result)
 
 
-
 # def largest_prime_factor(num):
 #     d = 2
 #     while d * d <= num:
@@ -1601,7 +1540,6 @@ import sys
 #
 #
 # print(fact_rec(n))
-
 
 
 # d = [1, 2, [True, False], ["Москва", "Уфа", [100, 101], ['True', [-2, -1]]], 7.89]
@@ -1697,8 +1635,6 @@ import sys
 # print(*filter_lst(s, lambda x: 3 <= x <= 5))
 
 
-
-
 # WIDTH = int(input())
 #
 #
@@ -1709,7 +1645,6 @@ import sys
 #
 #
 # print(func1())
-
 
 
 # def func1():
@@ -1735,7 +1670,6 @@ import sys
 #     TOTAL = x
 
 
-
 # def counter_add():
 #     def counter_sub(i):
 #         return i + 5
@@ -1756,7 +1690,6 @@ import sys
 # print(cnt(2))
 
 
-
 # def say_name(name):
 #     def say_tag(tag):
 #         print(f"<{tag}>{name}</{tag}>")
@@ -1767,7 +1700,6 @@ import sys
 # x = input()
 # f = say_name(x)
 # f(y)
-
 
 
 #
@@ -1823,7 +1755,6 @@ import sys
 # get_menu(menu)
 
 
-
 # def lst_dec(func):
 #     def wrapper(*args, **kwargs):
 #         result = func(*args, **kwargs)
@@ -1850,7 +1781,6 @@ import sys
 # print(reverse_words(input()))
 
 
-
 # import math
 #
 #
@@ -1862,7 +1792,6 @@ import sys
 # print(square_area(0))
 # print(square_area(14.05))
 # print(square_area(1))
-
 
 
 # def jumping_number(number):
@@ -1885,7 +1814,6 @@ import sys
 # print(jumping_number(23))
 # print(jumping_number(556847))
 # print(jumping_number(432101212))
-
 
 
 # def jumping_number(number):
@@ -2026,7 +1954,6 @@ import sys
 # count -=  1.2
 
 
-
 # x, y = map(int, input().split())
 #
 # x /= 2
@@ -2081,19 +2008,194 @@ import sys
 # except Exception:
 #     success_file_operations = False
 
-try:
-    with open('python/course_text.txt', encoding = 'windows-1251') as file_w:
-        target = 'python'
+# try:
+#     with open('python/course_text.txt', encoding = 'windows-1251') as file_w:
+#         target = 'python'
+#
+#         while True:
+#             current_pos = file_w.tell()
+#             chunk = file_w.read(len(target))
+#             if not chunk:
+#                 break
+#             if chunk.lower() == target:
+#                 file_w.seek(current_pos)
+#                 break
+#             file_w.seek(current_pos + 1)
+#
+# except FileNotFoundError:
+#     pass
+# msg = input()
+# with open('work_data/log_stats.txt', 'a+', encoding='UTF-8') as file:
+#     file.write(msg)
+#     file.seek(0)
+#     header = file.readline().strip()
 
-        while True:
-            current_pos = file_w.tell()
-            chunk = file_w.read(len(target))
-            if not chunk:
-                break
-            if chunk.lower() == target:
-                file_w.seek(current_pos)
-                break
-            file_w.seek(current_pos + 1)
 
-except FileNotFoundError:
-    pass
+# a = (x ** 2 for x in range(6))
+# print(next(a))
+# print(next(a))
+# print(next(a))
+
+
+# gen = (x for x in range(2,10001))
+#
+# for x in gen:
+#     print(x)
+
+
+# a, b = map(int, input().split())
+#
+# gen = (x ** 2 for x in range(a, b + 1))
+# tp = tuple(gen)
+# print(tp)
+
+
+# a, b = map(int, input().split())
+#
+# gen = (abs(x) for x in range(a, b + 1))
+#
+# for idx, x in enumerate(gen):
+#     print(x)
+#     if idx > 3:
+#         break
+
+
+# a = int(input())
+#
+# gen = (x ** 3 for x in range(-a, a + 1))
+# i = []
+# for idx, x in enumerate(gen):
+#     i.append(abs(x))
+#     if idx == 3:
+#         break
+#
+# print(*i)
+#
+#
+# from string import ascii_lowercase
+#
+# gen = (i + j for i in ascii_lowercase for j in ascii_lowercase)
+# for idx, letter in enumerate(gen):
+#     print(letter,  end = ' ')
+#     if idx == 49:
+#         break
+#
+# N = int(input())
+#
+#
+# def get_sum(total):
+#     for x in range(1,total + 1):
+#         yield sum(range(1, x + 1))
+#
+#
+# a = get_sum(N)
+# for x in a:
+#     print(x)
+# def get_list():
+#     for x in [1, 2, 3, 4]:
+#         yield x
+#
+#
+# d = get_list()
+# print(next(d))
+# print(next(d))
+
+
+# N = int(input())
+#
+# def balak_seq(max_len):
+#     balak_1, balak_2, balak_3 = 1, 1, 1
+#     idx = 0
+#     while idx <= max_len:
+#         yield balak_1
+#         idx += 1
+#         if idx == max_len:
+#             break
+#         yield balak_2
+#         idx += 1
+#         if idx == max_len:
+#             break
+#         yield balak_3
+#         idx += 1
+#         if idx == max_len:
+#             break
+#         balak_1 = balak_2 + balak_1 + balak_3
+#         balak_2 = balak_1 + balak_2 + balak_3
+#         balak_3 = balak_2 + balak_1 + balak_3
+# a = balak_seq(N)
+# my_list = []
+# for x in a:
+#     my_list.append(x)
+#
+# print(*my_list, sep = " ")
+#
+# import random
+# from string import ascii_lowercase, ascii_uppercase
+# chars = ascii_lowercase + ascii_uppercase + "0123456789!?@#$*"
+#
+# def gen_pass(psw_length):
+#     for _ in range(5):
+#         password = "".join(random.choices(chars, k=psw_length))
+#         yield password
+#
+# N = int(input())
+# a = gen_pass(N)
+# lst_psw = []
+# for _ in a:
+#     lst_psw.append(_)
+
+
+# from string import ascii_lowercase, ascii_uppercase
+# chars = ascii_lowercase + ascii_uppercase
+# import random
+# random.seed(1)
+#
+# def rndm_mail(max_size):
+#     while True:
+#         email_chars = []
+#         for _ in range(max_size):
+#             indx = random.randint(0, len(chars) - 1)
+#             email_chars.append(chars[indx])
+#         yield "".join(email_chars) + "@mail.ru"
+# N = int(input())
+# a = rndm_mail(N)
+# lst_psw = []
+# for _ in range(5):
+#     lst_psw.append(next(a))
+# print(*lst_psw, sep="\n")
+
+
+# b = map(int, ['1', '2', '3', '4', '5'])
+#
+# for _ in b:
+#     print(_, end = " ")
+
+
+# numbers = map(float, input().split())
+#
+# lst_fl = []
+# for _ in range(3):
+#     lst_fl.append(next(numbers))
+#
+# print(*lst_fl)
+
+
+# numbers = map(lambda x: abs(int(x)), input().split())
+# lst = list(numbers)
+# print(*lst)
+
+
+lst_in = [
+    '8 11 -5',
+    '3 4 10',
+    '-1 -2 3',
+    '-4 5 6'
+]
+
+lst2D = list(map(lambda row: list(map(int, row.split())), lst_in))
+print(lst2D)
+
+
+
+
+
