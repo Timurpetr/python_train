@@ -2183,19 +2183,25 @@ import sys
 # numbers = map(lambda x: abs(int(x)), input().split())
 # lst = list(numbers)
 # print(*lst)
+#
+#
+# lst_in = [
+#     '8 11 -5',
+#     '3 4 10',
+#     '-1 -2 3',
+#     '-4 5 6'
+# ]
+#
+# lst2D = list(map(lambda row: list(map(int, row.split())), lst_in))
+# print(lst2D)
 
 
-lst_in = [
-    '8 11 -5',
-    '3 4 10',
-    '-1 -2 3',
-    '-4 5 6'
-]
-
-lst2D = list(map(lambda row: list(map(int, row.split())), lst_in))
-print(lst2D)
 
 
-
+# cities = input().split()
+#
+# fvltr = filter(lambda _ : len(_) > 5, cities)
+#
+# print(*(next(fvltr) for _ in range(3)))
 
 
