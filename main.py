@@ -2290,4 +2290,21 @@
     #
     # print(f"Хэш cat: {hash_cat}, индекс: {hash_cat % table_size}")
     # print(f"Хэш dog: {hash_dog}, индекс: {hash_dog % table_size}")
+#
+#
+# d = {"a": 1}
+# print(hash(d))
 
+
+
+# def func(len):
+#     return [x for x in range(len) if x % 2 == 0]
+#
+#
+# print(func(10))
+#
+#
+# def test():
+#     assert func(10) == [0, 2, 4, 6, 8]
+#
+# print(test())
