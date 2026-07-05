@@ -6,7 +6,7 @@
 # print(lst_abs)
 # print('\n'.join(['*' * (i + 1) for i in range(N)]))
 # from this import d
-from itertools import count
+
 
 # 1 a = [(i,j) for i in range(3) for j in range(4)]
 # print(a)
@@ -477,7 +477,9 @@ from itertools import count
 # print(t2)
 
 
-import sys
+# import sys
+#
+# from forEducational import result
 
 # считывание списка из входного потока
 # lst_in = [
@@ -2198,10 +2200,79 @@ import sys
 
 
 
-# cities = input().split()
+
 #
 # fvltr = filter(lambda _ : len(_) > 5, cities)
 #
 # print(*(next(fvltr) for _ in range(3)))
+# a = 0o54
+#
+#
+#
+#
+# print(a)
+
+
+
+# s = "Привет мир!"
+# second = "Привет мир!"
+# print(id(s), id(second))  # Одинаковые
+#
+# # Но если создать строку динамически:
+# third = "Привет " + "мир!"
+# print(id(s), id(third))
+
+# s = "Привет мир!" * 10000
+# second = "Привет мир!"
+# print(id(s), id(second))
+#
+# seen = {s, second, 321, "dsdasd", [1, 2, 3]}
+
+
+# def function(a):
+#     # a.append(1)
+#     # print(a, args, kwargs)
+#     # a = [] if a is None else 0
+#     # a = 34
+#     #
+#     # def func ():
+#     #     print(a)
+#     #     function()
+#     # func()
+#     #print(a())
+#
+#
+# def default():
+#     return True
+#
+#
+#
+# function(default)
+
+
+
+
+# result = [x ** 2 for x in string]
+# print(result)
+# string = [1, 2, 3, 4]
+# a = map(lambda x: x ** 2, string)
+# print(*a)
+
+
+# def default():
+#     return int(input())
+#
+# def func(default):
+#     def wrapper():
+#         a = 'Hello'
+#         b = 'Poka'
+#         c = default()
+#         print(a * c, b * c)
+#     return wrapper
+#
+# my_func = func(default)
+# my_func()
+
+
 
 
