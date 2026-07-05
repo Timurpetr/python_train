@@ -2275,4 +2275,19 @@
 
 
 
+#
+# d = {}
+# d["cat"] = "кот"
+# print(hash("cat"))
+# print(d["cat"])
+# print(hash(42),
+# hash((1, 2)))
+
+    #
+    # table_size = 5
+    # hash_cat = hash("cat")
+    # hash_dog = hash("dog")
+    #
+    # print(f"Хэш cat: {hash_cat}, индекс: {hash_cat % table_size}")
+    # print(f"Хэш dog: {hash_dog}, индекс: {hash_dog % table_size}")
 
