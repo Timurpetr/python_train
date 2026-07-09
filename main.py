@@ -2309,9 +2309,67 @@
 #
 # print(test())
 
+#
+# import random
+#
+# a = random.randint(1,10)
+#
+# print(a)
 
-import random
 
-a = random.randint(1,10)
+lst = [3, 4, 5, -4, 0, 3, 4, 0]
 
-print(a)
+# i = []
+# v = []
+# for x in lst:
+#     if x == 0:
+#         i.append(x)
+#     else:
+#         v.append(x)
+#
+#
+# print(v + i)
+# def func(f):
+#     null = [x for x in f if x == 0]
+#     new_lst = [x for x in f if x != 0]
+#     return new_lst + null
+# print(func(lst))
+
+#
+#
+# def some_foo(int_list):
+#     new_list = []
+#     counter_zero = 0
+#     for i in int_list:
+#         if i == 0:
+#             counter_zero += 1
+#         else:
+#             new_list.append(i)
+#     for i in range(counter_zero):
+#         new_list.append(0)
+#     return new_list
+
+
+
+# cmd = 'top'
+#
+# match cmd:
+#     case 'top':
+#         print("вверх")
+
+
+
+
+# def some_foo(int_list):
+#     new_list = []
+#     counter_zero = 0
+#     for i in int_list:
+#         match i:
+#             case 0:
+#                 counter_zero += 1
+#             case _:
+#                 new_list.append(i)
+#     for i in range(counter_zero):
+#         new_list.append(0)
+#     return new_list
+# print(some_foo([1,3,4,0,3,-1,-3,0,3,1]))
