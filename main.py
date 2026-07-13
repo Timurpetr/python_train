@@ -2198,9 +2198,6 @@
 # print(lst2D)
 
 
-
-
-
 #
 # fvltr = filter(lambda _ : len(_) > 5, cities)
 #
@@ -2211,7 +2208,6 @@
 #
 #
 # print(a)
-
 
 
 # s = "Привет мир!"
@@ -2250,8 +2246,6 @@
 # function(default)
 
 
-
-
 # result = [x ** 2 for x in string]
 # print(result)
 # string = [1, 2, 3, 4]
@@ -2274,7 +2268,6 @@
 # my_func()
 
 
-
 #
 # d = {}
 # d["cat"] = "кот"
@@ -2283,18 +2276,17 @@
 # print(hash(42),
 # hash((1, 2)))
 
-    #
-    # table_size = 5
-    # hash_cat = hash("cat")
-    # hash_dog = hash("dog")
-    #
-    # print(f"Хэш cat: {hash_cat}, индекс: {hash_cat % table_size}")
-    # print(f"Хэш dog: {hash_dog}, индекс: {hash_dog % table_size}")
+#
+# table_size = 5
+# hash_cat = hash("cat")
+# hash_dog = hash("dog")
+#
+# print(f"Хэш cat: {hash_cat}, индекс: {hash_cat % table_size}")
+# print(f"Хэш dog: {hash_dog}, индекс: {hash_dog % table_size}")
 #
 #
 # d = {"a": 1}
 # print(hash(d))
-
 
 
 # def func(len):
@@ -2350,14 +2342,11 @@ lst = [3, 4, 5, -4, 0, 3, 4, 0]
 #     return new_list
 
 
-
 # cmd = 'top'
 #
 # match cmd:
 #     case 'top':
 #         print("вверх")
-
-
 
 
 # def some_foo(int_list):
@@ -2373,3 +2362,9 @@ lst = [3, 4, 5, -4, 0, 3, 4, 0]
 #         new_list.append(0)
 #     return new_list
 # print(some_foo([1,3,4,0,3,-1,-3,0,3,1]))
+# i, j = 1, 2
+# while i < 4:
+#     while j < 4:
+#         print(i, j)
+#         j += 1
+#     i += 1

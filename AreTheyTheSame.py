@@ -11,7 +11,7 @@ def comp(array1, array2):
         return False
     array2_copy = list(array2)
     for a in array1:
-        sq = a ** 2
+        sq = a**2
         if sq in array2_copy:
             array2_copy.remove(sq)
         else:

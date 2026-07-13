@@ -1,16 +1,15 @@
 s = input()
 
+
 def double_sum(start):
     def add_start(func):
-        def wrapper(*args,**kwargs):
-            res = func(*args,**kwargs) + start
+        def wrapper(*args, **kwargs):
+            res = func(*args, **kwargs) + start
             return res
+
         return wrapper
+
     return add_start
-
-
-
-
 
 
 @double_sum(start=5)
@@ -19,4 +18,3 @@ def func_trans(stroke):
 
 
 print(func_trans(s))
-
