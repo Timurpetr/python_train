@@ -2368,3 +2368,10 @@ lst = [3, 4, 5, -4, 0, 3, 4, 0]
 #         print(i, j)
 #         j += 1
 #     i += 1
+
+
+value = 100
+print_value = lambda: print(value)
+
+
+print_value()
