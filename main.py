@@ -2308,8 +2308,8 @@
 #
 # print(a)
 
-
-lst = [3, 4, 5, -4, 0, 3, 4, 0]
+#
+# lst = [3, 4, 5, -4, 0, 3, 4, 0]
 
 # i = []
 # v = []
@@ -2370,8 +2370,42 @@ lst = [3, 4, 5, -4, 0, 3, 4, 0]
 #     i += 1
 
 
-value = 100
-print_value = lambda: print(value)
+# value = 100
+# print_value = lambda: print(value)
+#
+#
+# print_value()
+# def process_numbers(numbers):
+#     res = [x**2 for x in numbers if x % 2 == 0]
+#     return res
+#
+#
+# lst = [1, 2, 3, 4]
+# print(process_numbers(lst))
 
 
-print_value()
+# def count_words(text):
+#     reg_text = text.lower().split()
+#     res = {word: reg_text.count(word) for word in reg_text}
+#     return res
+#     # for key, value in reg_text.items():
+#     #     reg_text[key] = len(value)
+#
+#
+# print(count_words("Все все все приехали сегодня"))
+
+
+def has_duplicates(items):
+    index_number = 1
+    for item in items:
+        if (i := item[index_number]) not in items:
+            index_number += 1
+            if index_number == len(items):
+                return False
+            return True
+
+
+# print(has_duplicates([1, 2, 3, 4, 2, 5]))
+print(has_duplicates([1, 2, 3, 4, 5]))
+# print(has_duplicates([]))
+# print(has_duplicates(["яблоко", "банан", "яблоко"]))
