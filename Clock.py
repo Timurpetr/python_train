@@ -1,7 +1,7 @@
 class Clock:
 
     def __init__(self, tm):
-        __time = 0
+        self.__time = 0
         self.set_time(tm)
 
     @staticmethod
@@ -19,3 +19,16 @@ class Clock:
 clock = Clock(4530)
 
 print(clock.get_time())
+
+
+class Animal:
+    @classmethod
+    def create(cls):
+        return cls()
+
+
+class Dog(Animal):
+    pass
+
+
+print(Dog.create())

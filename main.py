@@ -6,7 +6,7 @@
 # print(lst_abs)
 # print('\n'.join(['*' * (i + 1) for i in range(N)]))
 # from this import d
-
+# from ClassDecorators import Math
 
 # 1 a = [(i,j) for i in range(3) for j in range(4)]
 # print(a)
@@ -2394,18 +2394,161 @@
 #
 # print(count_words("Все все все приехали сегодня"))
 
-
-def has_duplicates(items):
-    index_number = 1
-    for item in items:
-        if (i := item[index_number]) not in items:
-            index_number += 1
-            if index_number == len(items):
-                return False
-            return True
+#
+# def has_duplicates(items):
+#     index_number = 1
+#     for item in items:
+#         if (i := item[index_number]) not in items:
+#             index_number += 1
+#             if index_number == len(items):
+#                 return False
+#             return True
 
 
 # print(has_duplicates([1, 2, 3, 4, 2, 5]))
-print(has_duplicates([1, 2, 3, 4, 5]))
+# print(has_duplicates([1, 2, 3, 4, 5]))
 # print(has_duplicates([]))
 # print(has_duplicates(["яблоко", "банан", "яблоко"]))
+
+
+# def f(a=[]):
+#     a.append(1)
+#     return a
+#
+#
+# print(f())
+# print(f())
+# a = (x * x for x in range(10))
+# print(*a)
+
+
+# table = [[6, -2, 0, -5.4, "abc"], [True, "pt", 3, False, False, True], [1, 1, 1, 0]]
+# table.append([4, -2, 10, 6, 2, 7, 13])
+# table = [table[3]] + [table[1]] + [table[2]] + [table[0]]
+# print(table)
+
+
+# s = int(input())
+#
+# match s:
+#     case s if 2 >= s >= 0:
+#         print("Младенец")
+#     case s if 12 >= s >= 3:
+#         print("Ребенок")
+#     case s if 17 >= s >= 13:
+#         print("Подросток")
+#     case s if 64 >= s >= 18:
+#         print("Взрослый")
+#     case s if 120 >= s > 64:
+#         print("Пенсионер")
+#     case _:
+#         print("Ошибка: некорректный возраст")
+
+
+# total = int(input())
+#
+# match total:
+#     case total if total < 1000:
+#         result_sum = total
+#         print(f"{result_sum:.2f}")
+#     case total if 5000 > total >= 1000:
+#         result_sum = total - total * 0.05
+#         print(f"{result_sum:.2f}")
+#     case total if 10000 > total >= 5000:
+#         result_sum = total - total * 0.1
+#         print(f"{result_sum:.2f}")
+#     case total if total >= 10000:
+#         result_sum = total - total * 0.15
+#         print(f"{result_sum:.2f}")
+
+
+# a, b, c = map(int, input().split())
+# sides = (a, b, c)
+#
+# match sides:
+#     case (a, b, c) if (a + b <= c) or (a + c <= b) or (b + c <= a):
+#         print("Это не треугольник")
+#     case (a, b, c):
+#         if a == b == c:
+#             print("Равносторонний треугольник")
+#         elif b == c or a == c or c == b or b == a:
+#             print("Равнобедренный треугольник")
+#         else:
+# #             print("Разносторонний треугольник")
+# withdraw = int(input())
+#
+# if withdraw > 410123:
+#     print("Недостаточно средств")
+#
+# elif withdraw > 50000:
+#     print("Превышен лимит разовой выдачи средств")
+# elif withdraw % 100 != 0:
+#     print("Ошибка: введите сумму кратную 100")
+# else:
+#     print(f"Выдано: {withdraw} руб.")
+
+
+# x, y = map(float, input().split())
+#
+# match x, y:
+#     case x, y if x > 0 and y > 0:
+#         print("I четверть")
+#     case x, y if x < 0 and y > 0:
+#         print("II четверть")
+#     case x, y if x < 0 and y < 0:
+#         print("III четверть")
+#     case x, y if x > 0 and y < 0:
+#         print("IV четверть")
+
+
+# names_initial = input().split()
+#
+#
+# def filter_by_length(*args, min_length=0, max_length):
+#     res = [item for item in args if min_length <= len(item) <= max_length]
+#     return res
+#
+#
+# names_result = filter_by_length(*names_initial, min_length=5, max_length=9)
+# print(names_result)
+
+# words = input().split()
+#
+#
+# def are_anagrams(s1, s2, *args, start=0, end=-1, ignore_case=True):
+#     if end == -1:
+#         end = None
+#     if ignore_case:
+#         if sorted(s1.lower()[start:end]) == sorted(s2.lower()[start:end]):
+#             return True
+#         else:
+#             return False
+#
+#     else:
+#         if sorted(s1[start:end]) == sorted(s2[start:end]):
+#             return True
+#         else:
+#             return False
+#
+#
+# result = are_anagrams(words[0], words[1], ignore_case=False)
+# print(result)
+import webbrowser
+import json
+from urllib.request import urlopen
+
+print("Let's find an old website.")
+site = input("Type a website URL: ")
+era = input("Type a year, month, and day, like 20150613: ")
+url = "http://archive.org/wayback/available?url=%s&timestamp=%s" % (site, era)
+response = urlopen(url)
+contents = response.read()
+text = contents.decode("utf-8")
+data = json.loads(text)
+try:
+    old_site = data["archived_snapshots"]["closest"]["url"]
+    print("Found this copy: ", old_site)
+    print("It should appear in your browser now.")
+    webbrowser.open(old_site)
+except:
+    print("Sorry, no luck finding", site)
