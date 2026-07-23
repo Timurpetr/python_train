@@ -151,39 +151,6 @@ class HangmanGame:
             self.letter_buttons[letter].configure(state="disabled")
             self.update_ui()
 
-    def update_ui(self):
-        self.word_label.configure(text=self.game.get_display_word())
-        self.attempts_label.configure(
-            text=f"Осталось попыток: {self.game.attempts_left}"
-        )
-        if self.game.is_won():
-            self.result_label.configure(text="🎉 Вы выиграли!", text_color="green")
-            self.disable_all_buttons()
-        elif self.game.is_lost():
-            self.result_label.configure(
-                text=f"😢 Вы проиграли. Слово: {self.game.word}", text_color="red"
-            )
-            self.disable_all_buttons()
-        else:
-            self.result_label.configure(text="")
-
-    def disable_all_buttons(self):
-        for btn in self.letter_buttons.values():
-            btn.configure(state="disabled")
-
-    def enable_all_buttons(self):
-        for btn in self.letter_buttons.values():
-            btn.configure(state="normal")
-
-    def reset_game(self):
-        self.game = HangmanGame(random.choice(WORDS))
-        self.enable_all_buttons()
-        self.result_label.configure(text="")
-        self.update_ui()
-
-    def run(self):
-        self.app.mainloop()
-
 
 if __name__ == "__main__":
     app = HangmanApp()
