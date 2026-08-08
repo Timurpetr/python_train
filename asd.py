@@ -15,7 +15,7 @@
 #
 # print(p1 == p2)
 # print(hash(p1) == hash(p2))
-
+from black.linegen import split_wrapper
 
 # class PathLine:
 #     def __init__(self, dist, angle):
@@ -62,3 +62,28 @@
 # id2 = Index()
 # d = {id1: id1, id2: id2}
 # print(d)
+# print(hash((1, 2, 3, {1: "", 2: ""})))
+a = "Табачник Ян Ефимович\n Черемесонов Михаил Дмитриевич\n Бабинець Ринат Гермонович \n Цызин Ринат Владимирович \n Тинаев Виталий Викторович"
+
+
+def func(lst):
+    split_lst = [line.strip() for line in lst.split("\n")]
+    surname_lst = [surname.split(" ")[0] for surname in split_lst]
+    i = 0
+    count = []
+    while i < len(surname_lst):
+        s = len(surname_lst[i])
+        count.append(s)
+        i += 1
+    res = []
+    mid = int(sum(count) / len(count))
+    for surname in surname_lst:
+        if len(surname) == min(count, key=lambda x: abs(x - mid)):
+            continue
+        else:
+            res.append(surname)
+
+    return res, count
+
+
+print(func(a))
