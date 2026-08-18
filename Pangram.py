@@ -25,17 +25,37 @@
 #
 # print(get_count("aeiou"))
 
-import math
+# import math
+#
+#
+# def persistence(n):
+#     res = [int(n) for n in str(n)]
+#     count = 0
+#     while len(res) > 1:
+#         res = math.prod(res)
+#         res = [int(n) for n in str(res)]
+#         count += 1
+#     return count
+#
+#
+# print(persistence(39))
 
 
-def persistence(n):
-    res = [int(n) for n in str(n)]
-    count = 0
-    while len(res) > 1:
-        res = math.prod(res)
-        res = [int(n) for n in str(res)]
-        count += 1
-    return count
+# def summation(num):
+#     return sum(range(1, num + 1))
+#
+#
+# print(summation(8))
 
 
-print(persistence(39))
+chars = [chr(x) for x in range(1072, 1104)]
+
+our_dict = {key + 1: value for (key, value) in enumerate(chars)}
+print(our_dict)
+res1 = []
+res2 = []
+for key, value in our_dict.items():
+    res1.append(key)
+    res2.append(ord(value))
+
+print(res1, res2)
