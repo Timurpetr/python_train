@@ -1,3 +1,5 @@
-string = [1, 2, 3, 4]
-a = list(map(lambda x: x ** 2, string))
-print(a)
+def number_to_string(num):
+    return str(num)
+
+
+print(type(number_to_string(123)))
